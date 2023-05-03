@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menus.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <script src="js/login.js" async></script>
+    <script src="js/user.js" async></script>
+    <script src="js/cadastrar.js" async></script>
+    <title>Registrieren</title>
+</head>
+<body>
+    <header>
+        <div id="header-img">
+            <a href="index.html">
+                <img src="img/logo.png" alt="kingsman">
+            </a>
+        </div>
+        <div id="header-title">
+            Manieren den Mann ausmachen
+        </div>
+        <div id="header-user">
+            <span id="header-user-text"></span>
+            <a href="cadastro.html">
+                <img src="img/Shelby.jpg" alt="Shelby" id="user-img">
+            </a>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Hauptseite
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Katalog
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Zubehör
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Standort
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Über uns
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div id="main-div">
+            <form class="login-div" onsubmit="return false">
+                <h1>
+                    Registrieren
+                </h1>
+                <label for="customizar">
+                    Anpassung:
+                </label>
+                <br>
+                <select name="customizar" id="customizar">
+                    <option value="normal">Normal</option>
+                    <option value="custom">Custom</option>
+                </select>
+                <br>
+                <br>
+                <label for="nome">
+                    Name:
+                </label>
+                <br>
+                <input type="text" id="nome" required>
+                <br>
+                <label for="usuario">
+                    Nutzername:
+                </label>
+                <br>
+                <input type="text" id="usuario" required>
+                <br>
+                <label for="senha">
+                    Passwort:
+                </label>
+                <br>
+                <input type="password" id="senha" required>
+                <br>
+                <label for="email">
+                    Email:
+                </label>
+                <br>
+                <input type="email" id="email" required>
+                <br>
+                <label for="nascimento">
+                    Geburtsdatum:
+                </label>
+                <br>
+                <input type="date" id="nascimento" required>
+                <br>
+
+                <label>
+                    Sex:
+                </label>
+                <br>
+                <label for="masculino">
+                    Männlich
+                </label>
+                <input type="radio" name="sexo" value="masculino" id="masculino" required>
+                <label for="feminino">
+                    Feminin
+                </label>
+                <input type="radio" name="sexo" value="feminino" id="feminino" required>
+                <br>
+                <input type="submit" value="Registrieren" onclick="cadastrar()">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>
+            Autor: Daniel Krüger
+        </p>
+    </footer>
+</body>
+</html>

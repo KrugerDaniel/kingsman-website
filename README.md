@@ -1,5 +1,4 @@
 <h1 align='center'>Kingsman Website!</h1>
-<hr>
 <h2>Objetivo do projeto:</h2>
 <p>Criar um site para a primeira avaliação de Programação Web da faculdade.</p>
 <br>
